@@ -95,6 +95,7 @@ function validateUserForm()
 	if ($("#contactNumber").val().trim() == "")
 	{
 		return "Insert contactNumber";
+		
 	}
 	if ($("#userDOB").val().trim() == "")
 	{
@@ -111,10 +112,6 @@ function validateUserForm()
 	
 	//validation for the numerical numbers
 	
-	//var tempContact = $("#contactNumber").val().trim();
-	//if(!$.isNumberic(tempContact)) {
-	//	return "insert a valid number for the Contact Number";
-	//}
 	
 	
 
