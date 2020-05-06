@@ -83,10 +83,27 @@ function validateUserForm()
 	{
 		return "firstName";
 	} 
+	
+	// is String value
+	var tmpFirstName = $("#firstName").val().trim();
+	if ($.isNumeric(tmpFirstName))
+	{
+	return "Insert a Valid Name (Starts with letters)";
+	}
+
 	if ($("#lastName").val().trim() == "")
 	{
 		return "Insert lastName";
 	}
+	// is String value
+	var tmpLastName = $("#lastName").val().trim();
+	if ($.isNumeric(tmpLastName))
+	{
+	return "Insert a Valid LastName (Starts with letters)";
+	}
+	
+	
+	
 	if ($("#userAddress").val().trim() == "")
 	{
 		return "Insert userAddress ";
