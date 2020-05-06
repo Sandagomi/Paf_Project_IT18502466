@@ -119,7 +119,7 @@ public class users {
 			String newUser = readUser();
 			output = "{\"status\":\"success\", \"data\": \"" + newUser + "\"}";
 		} catch (Exception e) {
-			output = "{\"status\":\"error\", \"data\": \"Error while inserting the Payment.\"}";
+			output = "{\"status\":\"error\", \"data\": \"Error while inserting the Users.\"}";
 			System.err.println(e.getMessage());
 		}
 		return output;
