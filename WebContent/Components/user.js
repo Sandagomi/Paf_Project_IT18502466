@@ -97,6 +97,13 @@ function validateUserForm()
 		return "Insert contactNumber";
 		
 	}
+	// is numerical value
+	var tmpContactNumber = $("#contactNumber").val().trim();
+	if (!$.isNumeric(tmpContactNumber))
+	{
+	return "Insert a numerical value for Contact Number";
+	}
+	
 	if ($("#userDOB").val().trim() == "")
 	{
 		return "Insert userDOB";
@@ -105,6 +112,14 @@ function validateUserForm()
 	{
 		return "Insert userAge";
 	}
+	
+	// is numerical value
+	var tmpUserAge = $("#userAge").val().trim();
+	if (!$.isNumeric(tmpUserAge))
+	{
+	return "Insert a numerical value for Age";
+	}
+	
 	if ($("#userEmail").val().trim() == "")
 	{
 		return "Insert userEmail";
