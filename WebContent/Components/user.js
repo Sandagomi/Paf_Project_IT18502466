@@ -108,6 +108,15 @@ function validateUserForm()
 	{
 		return "Insert userEmail";
 	}
+	
+	//validation for the numerical numbers
+	
+	//var tempContact = $("#contactNumber").val().trim();
+	//if(!$.isNumberic(tempContact)) {
+	//	return "insert a valid number for the Contact Number";
+	//}
+	
+	
 
 	return true;
 }
